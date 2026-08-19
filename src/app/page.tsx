@@ -7,7 +7,7 @@ export default function Page() {
         <p className="text-xl text-muted mb-6">Product Marketing Specialist</p>
         <p className="text-lg leading-relaxed max-w-2xl">
           Product marketer at Twilio covering the Communications Platform (CPaaS) portfolio across EMEA.
-          I build the systems, tools, and narratives that connect product capabilities to revenue outcomes —
+          I build the systems, tools, and narratives that connect global product capabilities to regional narratives —
           from positioning and competitive intelligence to sales enablement and flagship event content.
         </p>
         <nav className="mt-8 flex flex-wrap gap-3">
@@ -63,10 +63,9 @@ export default function Page() {
           timeline="Feb–Jun 2026"
           tags={["Keynote", "Customer Content", "Messaging"]}
           bullets={[
-            "Owned vision keynote messaging and event manifesto",
-            "Produced customer multiplier session: discovery through deck, script, and dry-run with automotive customer",
-            "Developed fireside chat framework for PropTech customer (messaging, questions, branded backdrop slides)",
-            "Event exceeded attendance target (137 attendees, 95 external)",
+            "Produced customer sessions (presentation and fireside style): discovery through deck, messaging, and presentation with customer",
+            "Customers sourced for PR strategy",
+            "Event exceeded attendance target (137 attendees, 95 external), 7.9M digital ad impressions and 3.62M OOH impressions with Marketing Influenced Pipeline of $6.2M (vs $5M target)",
           ]}
         />
         <ProjectCard
@@ -75,9 +74,8 @@ export default function Page() {
           tags={["Regional Event", "French-Language"]}
           bullets={[
             "Half-day, fully French-language event",
-            "Led content workback plan and customer speaker sourcing",
-            "Secured cloud partner sponsorship and developed PR activation concept",
-            "Target: multi-million euro pipeline influenced",
+            "Led customer content and enterprise level customer speaker sourcing",
+            
           ]}
         />
         <ProjectCard
@@ -87,8 +85,7 @@ export default function Page() {
           bullets={[
             "Full-day event targeting ~275 attendees with C-suite keynote",
             "Led speaker sourcing across multiple product lines and verticals",
-            "Coordinated on-site video interviews and budget approvals",
-            "Managed executive networking programming",
+            "Coordinated on-site video interviews",
           ]}
         />
       </Section>
@@ -147,10 +144,8 @@ export default function Page() {
           timeline="Jun–Aug 2026"
           tags={["Full Campaign", "Regional", "Content"]}
           bullets={[
-            "Created comprehensive launch brief with three positioning pillars (Trust at Scale, Proven ROI, Smart Engagement)",
-            "Developed campaign tagline and four-phase roadmap",
             "Wrote regionalization addendum adapting global campaign to UK market context",
-            "Produced 2 technical blog posts and visual ebook-style content",
+            "Produced technical blog posts and supported with other campaign content messaging",
           ]}
         />
         <ProjectCard
@@ -158,10 +153,11 @@ export default function Page() {
           timeline="Q1–Q2 2026"
           tags={["Competitive", "Sales Play", "Enablement"]}
           bullets={[
-            "Built competitive messaging ladder targeting 5 major voice competitors",
-            "Developed FinServ-specific talk track and feature matrix comparison deck",
+            "Built competitive messaging ladder targeting 5 major competitors",
+            "Developed sales talk track and feature matrix comparison deck",
             "Delivered enablement session for field sales team",
-            "Created full takeout enablement deck for account executives",
+            "Created full takeout enablement deck for sales",
+            "15.2mil eARR pipe generated",
           ]}
         />
         <ProjectCard
@@ -175,13 +171,12 @@ export default function Page() {
           ]}
         />
         <ProjectCard
-          title="Agent Productivity / Voice AI Campaign"
+          title="Voice AI Campaign"
           timeline="Jan–Apr 2026"
           tags={["Webinar", "Sales Play", "ISV"]}
           bullets={[
-            "Prepared webinar Q&A content and regional sales play one-pager",
+            "Prepared webinar content and regional sales play one-pager",
             "Developed ISV customer stories for voice AI awareness phase",
-            "Set measurable OKR for pipeline influence from AI-native ISV cohort",
           ]}
         />
       </Section>
@@ -194,18 +189,8 @@ export default function Page() {
           tags={["Interactive Tool", "Methodology", "Talk Track"]}
           bullets={[
             "Built interactive tool helping AEs quantify 'build on platform' vs. 'buy SaaS' for prospects",
-            "Created methodology audit (v3) with sourced data from analyst firms and internal benchmarks",
+            "Conducted internal GTM research and audit to understand customer pain points and buyer sentiment",
             "Developed accompanying AE talk track and productionization roadmap",
-          ]}
-        />
-        <ProjectCard
-          title="Cost of Inaction Calculator"
-          timeline="Jun 2026"
-          tags={["ROI Tool", "Pipeline Acceleration"]}
-          bullets={[
-            "Working prototype quantifying revenue at risk from delayed platform adoption",
-            "Full spec with calculator logic, methodology page, and playbook audit",
-            "AE talk track for positioning during discovery calls",
           ]}
         />
         <ProjectCard
@@ -216,18 +201,6 @@ export default function Page() {
             "Built web app connected to AI and product documentation APIs",
             "Pulls authoritative data residency and regulatory compliance data for priority EMEA countries",
             "Generates talk tracks and solutions for products lacking data residency",
-            "Working with legal team on source vetting for production deployment",
-          ]}
-        />
-        <ProjectCard
-          title="EMEA Quarterly Newsletter"
-          timeline="Launched Feb 2026 — 3 editions shipped"
-          tags={["Sales Comms", "Net-New Channel"]}
-          bullets={[
-            "Conceived and launched recurring newsletter bridging product marketing and regional sales",
-            "Pitched to leadership, designed format, wrote content across product updates, customer proof, and competitive intel",
-            "Distributed to entire EMEA marketing and sales organization",
-            "Directly addresses seller feedback on product awareness gaps",
           ]}
         />
         <ProjectCard
@@ -262,16 +235,6 @@ export default function Page() {
             "Country-by-country competitive analysis across 4 priority EMEA markets",
             "Identified top 3 competitors per market with positioning differentiation",
             "Developed market-specific battle cards for field sales",
-          ]}
-        />
-        <ProjectCard
-          title="Data Residency Objection Handling"
-          timeline="Nov 2025–Aug 2026"
-          tags={["Sustained Ownership", "Deal Unblocker"]}
-          bullets={[
-            "Sustained ownership from product private beta through objection deck through AI-powered compliance app",
-            "Covers voice, messaging, and email product lines",
-            "Directly unblocks deals stalled on EMEA data sovereignty concerns",
           ]}
         />
       </Section>
@@ -325,8 +288,8 @@ export default function Page() {
           <MiniCard title="Scaling Human Connection with AI" description="Global thought leadership deck on the AI + human connection narrative" />
           <MiniCard title="Sales Motion Playbook" description="Global playbook translating product strategy into field execution" />
           <MiniCard title="PMM in Product Lifecycle" description="Internal framework defining product marketing's role in the PDLC" />
-          <MiniCard title="Platform Offsite Dashboard" description="Scripted workstream tracker driving cross-team accountability" />
-          <MiniCard title="Conversation Platform Launch" description="Contributed positioning and launch briefs for new platform capabilities" />
+          <MiniCard title="Platform Dashboard" description="Scripted workstream tracker driving cross-team accountability" />
+          <MiniCard title="Conversation Platform Launch" description="Contributed to regional positioning and localization for new platform launches" />
           <MiniCard title="SMS Data Residency GTM" description="Private beta pipeline tracking, blog strategy, and sales enablement" />
         </div>
       </Section>
