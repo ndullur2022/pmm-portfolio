@@ -88,6 +88,34 @@ export default function Page() {
             "Coordinated on-site video interviews",
           ]}
         />
+        <ProjectCard
+          title="SIGNAL Unlocked — Virtual Event"
+          timeline="Jul 2026"
+          tags={["Virtual Event", "Post-Signal", "On-Demand"]}
+          bullets={[
+            "Led EMEA promotion strategy for post-Signal Berlin virtual experience extending conference reach globally",
+            "Managed registration targeting (400+ registrations), gating strategy, and 6sense tracking approach",
+            "Oversaw content integrity — verified customer quote approvals and correct messaging positioning",
+            "Planned localization into French and Spanish for Q4 reach expansion",
+          ]}
+          links={[
+            { label: "Watch On-Demand", url: "https://www.twilio.com/en-us/lp/signal-unlocked-2026" },
+          ]}
+        />
+        <ProjectCard
+          title="Agent Productivity Webinar — Presenter"
+          timeline="Q1 2026"
+          tags={["Webinar", "Presenter", "Demo"]}
+          bullets={[
+            "Co-presented webinar on contact center agent productivity use case for EMEA audience",
+            "Owned and delivered the front-end customer experience demo (pre-recorded screen capture of conversational AI)",
+            "Featured Audibene customer story as proof point for multiproduct voice AI deployment",
+            "Part of broader Agent Productivity campaign driving awareness of voice AI capabilities",
+          ]}
+          links={[
+            { label: "Watch On-Demand", url: "https://webinars.twilio.com/twilio/how-to-boost-agent-productivity" },
+          ]}
+        />
       </Section>
 
       {/* Customer Stories */}
