@@ -419,7 +419,7 @@ export default function Page() {
       <footer className="text-center text-sm text-muted py-8 border-t border-border">
         <p>Nidhi Dullur — Product Marketing Specialist</p>
         <p className="mt-1">
-          <a href="https://www.linkedin.com/in/nidhidullur/" className="text-accent hover:underline" target="_blank" rel="noopener noreferrer">
+          <a href="https://www.linkedin.com/in/nidhi-dullur/" className="text-accent hover:underline" target="_blank" rel="noopener noreferrer">
             LinkedIn
           </a>
         </p>
