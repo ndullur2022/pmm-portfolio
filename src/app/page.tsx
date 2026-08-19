@@ -11,7 +11,7 @@ export default function Page() {
           from positioning and competitive intelligence to sales enablement and flagship event content.
         </p>
         <nav className="mt-8 flex flex-wrap gap-3">
-          {["Events", "Customer Stories", "Campaigns", "Sales Enablement", "Competitive Intel", "Strategy", "Built with AI"].map(
+          {["Events", "Customer Stories", "Campaigns", "Sales Enablement", "Competitive Intel", "Strategy", "Industry Solutions", "Cross-Functional", "Product Launches", "Built with AI"].map(
             (s) => (
               <a
                 key={s}
@@ -306,6 +306,204 @@ export default function Page() {
             "Adapting global framework of 26 canonical use cases for EMEA market priorities",
             "Working with SE leadership on sales play messaging alignment",
             "Connecting use case framework to existing sales plays for consistent field execution",
+          ]}
+        />
+      </Section>
+
+      {/* Industry Solutions Marketing */}
+      <Section id="industry-solutions" title="Industry Solutions Marketing" subtitle="Owning vertical marketing for high-priority industries — messaging, positioning, and go-to-market content">
+        <ProjectCard
+          title="Financial Services — EMEA Vertical Lead"
+          timeline="Q1–Q3 2026"
+          tags={["Finserv", "Positioning", "Sales Play"]}
+          bullets={[
+            "Primary industry focus for EMEA: developed regional messaging adapted from global positioning framework",
+            "Built competitive displacement play with industry-specific talk track for account executives",
+            "Created ROI and cost-of-inaction tools calibrated for financial services buyer personas",
+            "Contributed to messaging and channel-specific sales plays targeting banking, insurance, and payments use cases",
+          ]}
+        />
+        <ProjectCard
+          title="Technology Partners & AI Startups — GTM Motion"
+          timeline="Q1–Q3 2026"
+          tags={["Partner Ecosystem", "AI", "Pipeline"]}
+          bullets={[
+            "Developed partner-specific positioning (multi-tenant architecture, compliance, platform extensibility)",
+            "Set OKR: influence 5% pipeline increase from AI-native technology partner segment",
+            "Developed customer stories for Voice AI campaign featuring partners building on the platform",
+            "Co-marketing experiments with fintech partners: joint blog and co-speaking engagements",
+          ]}
+        />
+        <ProjectCard
+          title="Retail — Event Content & Customer Evidence"
+          timeline="Oct 2025–Aug 2026"
+          tags={["Retail", "Customer Stories", "Event Content"]}
+          bullets={[
+            "Sourced retail customer logos and stories for regional sales decks and event materials",
+            "Developed Cyber Week 2026 UK campaign (peak season positioning for retail buyers)",
+            "Produced technical blog posts on AI-powered retail customer journeys",
+            "Sourced retail customer speakers for flagship conference events",
+          ]}
+        />
+        <ProjectCard
+          title="Use Case Framework — Regional Industry Activation"
+          timeline="Jul–Aug 2026"
+          tags={["26 Use Cases", "Self-Serve Tool", "Cross-Vertical"]}
+          bullets={[
+            "Leading EMEA rollout of global use case framework (26 use cases mapped to 5 buying centers)",
+            "Partnering with central team to bring self-serve GTM tool to regional sellers",
+            "Adapting existing sales plays to use-case-focused structure for consistent field execution",
+            "Announced to all EMEA marketing and sales via quarterly newsletter",
+          ]}
+        />
+        <ProjectCard
+          title="Accolades Book — Regional Localization"
+          timeline="Jul 2026"
+          tags={["French", "German", "Sales Asset"]}
+          bullets={[
+            "Translated and localized company accolades deck into French and German for EMEA field teams",
+            "Crowdsourced language review from native-speaking sales reps before distribution to prospects",
+            "Contains vertical-specific win stories, analyst recognitions, and proof points",
+          ]}
+        />
+      </Section>
+
+      {/* Cross-Functional Collaboration */}
+      <Section id="cross-functional" title="Cross-Functional Collaboration" subtitle="Partnering with Product, Sales, Engineering, and Marketing to shape strategy and activate go-to-market">
+        <ProjectCard
+          title="Product Team — Launch Pods & Regional Readiness"
+          timeline="Jun 2026"
+          tags={["Product Launch", "Regional Readiness"]}
+          bullets={[
+            "Partnered with Product as EMEA PMM for identity and security product launches",
+            "Joined cross-functional launch pods to ensure regional messaging, enablement timing, and availability clarity",
+            "Responsible for surfacing EMEA-specific requirements back to global Product teams",
+          ]}
+        />
+        <ProjectCard
+          title="Product Feedback — Market & Customer Signals"
+          timeline="Nov 2025–Aug 2026"
+          tags={["Product Influence", "Legal", "Field Feedback"]}
+          bullets={[
+            "Channeled field feedback on product gaps blocking deals in regulated European industries",
+            "Partnered with Legal and compliance teams to vet marketing claims and source attribution",
+            "Built a compliance readiness tool that makes product gaps visible — creating a structured feedback loop to Product",
+            "Advocated for product changes based on recurring deal-blocker patterns across the region",
+          ]}
+        />
+        <ProjectCard
+          title="Solutions Engineering — Competitive Intel Co-Development"
+          timeline="Q2–Q3 2026"
+          tags={["Engineering Partnership", "Field Validation"]}
+          bullets={[
+            "Shared competitive landscape analyses with regional engineers for field validation and accuracy",
+            "Incorporated technical feedback into battle card iterations (deeper feature comparisons)",
+            "Partnered with engineering leadership on use case framework messaging alignment",
+            "Co-developed ROI methodology with sales and engineering input on realistic customer parameters",
+          ]}
+        />
+        <ProjectCard
+          title="Sales Leadership — Strategy & Enablement"
+          timeline="Ongoing"
+          tags={["VP Sales", "Directors", "Field Teams"]}
+          bullets={[
+            "Delivered market trends playbook directly to VP Sales for strategic planning",
+            "Partnered with sales directors to adapt global plays to regional market structure",
+            "Worked with digital sales team on customer story feedback loops (country and vertical tagging)",
+            "Regular engagement with front-line managers on content gaps and competitive needs",
+          ]}
+        />
+        <ProjectCard
+          title="Campaigns & Demand Generation"
+          timeline="Ongoing"
+          tags={["Campaigns", "Demand Gen", "Content"]}
+          bullets={[
+            "Partnered with campaigns team across Cyber Week, Voice AI, cross-sell, and platform campaigns",
+            "Reviewed and localized campaign copy for cultural relevance, regulatory accuracy, and regional voice",
+            "Provided messaging frameworks and customer proof points as campaign fuel",
+            "Coordinated virtual event strategy with campaigns for promotion, registration, and attribution tracking",
+          ]}
+        />
+        <ProjectCard
+          title="Customer Marketing & PR"
+          timeline="Oct 2025–ongoing"
+          tags={["Customer Advocacy", "PR", "Agency"]}
+          bullets={[
+            "Partnered with Customer Marketing and PR to build end-to-end story pipeline from sourcing through publication",
+            "Engaged external agency for regional story writing; coordinated media alerts with PR",
+            "Provided field feedback to improve story discoverability (country tags, vertical filters)",
+            "Sourced customer speakers for 4 conference events by partnering directly with account teams",
+          ]}
+        />
+      </Section>
+
+      {/* Product Launches */}
+      <Section id="product-launches" title="Product Launches" subtitle="Supporting global launches with regional readiness, enablement, and go-to-market execution">
+        <div className="bg-card border border-border rounded-xl p-6 mb-4">
+          <p className="text-sm text-muted">
+            Product launches are led by core PMM teams globally. My role as regional PMM is to ensure EMEA readiness —
+            localizing messaging, creating regional enablement, managing field communications, and flagging availability
+            or compliance gaps before launch day. I support these launches, not lead them.
+          </p>
+        </div>
+        <ProjectCard
+          title="Conversational AI Platform — Regional Support"
+          timeline="Feb–May 2026"
+          tags={["Platform Launch", "Regional Readiness", "Enablement"]}
+          bullets={[
+            "Supported GA launches of three new platform capabilities (orchestration, memory, and agent connectivity)",
+            "Provided regional perspective on positioning and flagged availability gaps for European markets",
+            "Contributed to launch briefs ensuring field teams had localized context and timing",
+          ]}
+        />
+        <ProjectCard
+          title="Identity & Security Products — EMEA Launch Support"
+          timeline="Jun 2026"
+          tags={["Identity", "Security", "Launch Pod"]}
+          bullets={[
+            "Joined cross-functional launch pod as regional PMM responsible for EMEA readiness",
+            "Partnered with Product to understand scope and European compliance considerations",
+            "Ensured enablement materials reflected regional data privacy and sovereignty requirements",
+          ]}
+        />
+        <ProjectCard
+          title="Data Residency — Private Beta Support"
+          timeline="Nov 2025"
+          tags={["Private Beta", "Pipeline Tracking", "Enablement"]}
+          bullets={[
+            "Attended private beta demo and tracked influenced pipeline",
+            "Supported blog strategy and FAQ content for field readiness",
+            "Developed compliance talk tracks for European sellers during beta phase",
+          ]}
+        />
+        <ProjectCard
+          title="Contact Center AI Solution — Rebrand & Regional Activation"
+          timeline="Q1–Q3 2026"
+          tags={["Solution Launch", "Rebrand", "Webinar"]}
+          bullets={[
+            "Supported solution rebrand (Agent Productivity → Contact Center Intelligence + AI Self-Service Agents)",
+            "Co-presented regional webinar as part of campaign awareness push",
+            "Localized pitch deck for European markets (regional language, logos, and industry-specific demo scenarios)",
+          ]}
+        />
+        <ProjectCard
+          title="Use Case Framework & GTM Tool — Regional Rollout"
+          timeline="Jul–Aug 2026"
+          tags={["Framework Launch", "Self-Serve Tool", "Field Adoption"]}
+          bullets={[
+            "Supporting regional activation of globally-built use case framework (26 use cases, 5 buying centers)",
+            "Partnering with central team to bring self-serve GTM tool to European sellers",
+            "Announced to field via quarterly newsletter; coordinating with engineering leadership on adoption",
+          ]}
+        />
+        <ProjectCard
+          title="Messaging Channel Updates — Regional Enablement"
+          timeline="Ongoing"
+          tags={["Channel Growth", "Pricing", "Enablement"]}
+          bullets={[
+            "Tracked messaging channel growth across European markets and flagged coverage gaps to Product",
+            "Supported pricing change enablement for regional sellers (new commercial models)",
+            "Created upsell play documentation for emerging messaging channels in EMEA",
           ]}
         />
       </Section>
