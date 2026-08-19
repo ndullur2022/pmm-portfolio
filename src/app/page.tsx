@@ -11,7 +11,7 @@ export default function Page() {
           from positioning and competitive intelligence to sales enablement and flagship event content.
         </p>
         <nav className="mt-8 flex flex-wrap gap-3">
-          {["Events", "Customer Stories", "Campaigns", "Sales Enablement", "Competitive Intel", "Strategy"].map(
+          {["Events", "Customer Stories", "Campaigns", "Sales Enablement", "Competitive Intel", "Strategy", "Built with AI"].map(
             (s) => (
               <a
                 key={s}
@@ -320,6 +320,81 @@ export default function Page() {
           <MiniCard title="Conversation Platform Launch" description="Contributed to regional positioning and localization for new platform launches" />
           <MiniCard title="SMS Data Residency GTM" description="Private beta pipeline tracking, blog strategy, and sales enablement" />
         </div>
+      </Section>
+
+      {/* Built with AI */}
+      <Section id="built-with-ai" title="Built with AI" subtitle="I use AI as a force multiplier — not for generic content, but for building functional tools and automating workflows that would otherwise require engineering resources">
+        <div className="bg-card border border-border rounded-xl p-6 mb-4">
+          <p className="text-sm text-muted mb-4">
+            As a product marketer, I identified that many of the highest-impact enablement gaps could be solved with lightweight applications rather than static documents. I use AI coding tools (Claude Code, Cursor) to build and ship these — turning PMM from a slide-producing function into one that delivers self-serve, interactive tools sellers actually use.
+          </p>
+        </div>
+        <ProjectCard
+          title="Security & Compliance Readiness Engine"
+          timeline="Aug 2026"
+          tags={["Next.js", "OpenAI API", "Twilio Docs MCP", "Vercel"]}
+          bullets={[
+            "Built a web app that pulls authoritative data residency and regulatory compliance data for EMEA countries",
+            "Connected to OpenAI for natural language queries and Twilio documentation APIs for product-level accuracy",
+            "Generates talk tracks and objection handling for products lacking data residency in specific regions",
+            "Solves a critical field problem: sellers previously had no single source of truth for regional compliance readiness",
+          ]}
+          links={[
+            { label: "Live App", url: "https://compliance-engine-hazel.vercel.app/" },
+          ]}
+        />
+        <ProjectCard
+          title="Competitive Intelligence Automation"
+          timeline="Jun 2026"
+          tags={["Google Apps Script", "Automated Alerts", "Dashboard"]}
+          bullets={[
+            "Built automated monitoring system tracking 33 competitors across 11 sub-categories",
+            "Google Apps Script processes alerts, categorizes updates, and populates a sales-facing dashboard",
+            "Monthly brief auto-generates from accumulated signals — no manual compilation",
+            "Replaced a manual, ad-hoc process that produced stale intel by the time it reached sellers",
+          ]}
+        />
+        <ProjectCard
+          title="Build vs. Buy Calculator"
+          timeline="May–Jun 2026"
+          tags={["Interactive Web App", "Financial Modeling"]}
+          bullets={[
+            "Interactive tool that models total cost of ownership: building on a platform vs. purchasing SaaS",
+            "AEs input customer parameters and receive a quantified comparison with sourced methodology",
+            "Turns a complex consultative conversation into a repeatable, data-backed discovery tool",
+          ]}
+        />
+        <ProjectCard
+          title="Cost of Inaction Estimator"
+          timeline="Jun 2026"
+          tags={["Calculator", "Revenue Modeling"]}
+          bullets={[
+            "Working prototype that quantifies revenue at risk from delayed communications platform adoption",
+            "Models opportunity cost across customer acquisition, retention, and operational efficiency",
+            "Designed for AEs to use during discovery to create urgency backed by the prospect's own data",
+          ]}
+        />
+        <ProjectCard
+          title="Platform Offsite Workstream Dashboard"
+          timeline="Mar 2026"
+          tags={["Google Apps Script", "Web App"]}
+          bullets={[
+            "Transformed a 58-slide offsite deck into an interactive workstream tracker",
+            "Team members log in via Google auth to update progress on assigned workstreams",
+            "Replaced post-offsite entropy with persistent, shared accountability",
+          ]}
+        />
+        <ProjectCard
+          title="PMM Operating System (This Workspace)"
+          timeline="Ongoing"
+          tags={["Claude Code", "MCP Integrations", "Automated Workflows"]}
+          bullets={[
+            "Built a structured AI workspace connecting Slack, Granola (meeting notes), Google Docs, and Canva via MCP servers",
+            "Automated research synthesis, competitive monitoring, and content drafting workflows",
+            "Custom skills for slide generation, brand compliance checks, content review, and document publishing",
+            "Enables one PMM to operate at the output velocity of a team — shipping tools, content, and strategy in parallel",
+          ]}
+        />
       </Section>
 
       {/* Approach */}
