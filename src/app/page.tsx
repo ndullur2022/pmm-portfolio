@@ -52,6 +52,11 @@ export default function Page() {
             "Managed AV crew coordination, interview scheduling, and multi-format content cuts (15s/30s social variants)",
             "Briefed campaigns team on cross-campaign reuse strategy for video assets",
           ]}
+          links={[
+            { label: "Sage — Video Interview", url: "https://www.youtube.com/watch?v=UN16UfMo2w8&t=1s" },
+            { label: "Relay Technologies — Video Interview", url: "https://www.youtube.com/watch?v=7qHRh1C-Hpc" },
+            { label: "Delivery Hero — Video Interview", url: "https://www.youtube.com/watch?v=tWDbrnHWvn8" },
+          ]}
         />
         <ProjectCard
           title="SIGNAL Berlin — PMM Lead"
@@ -96,30 +101,35 @@ export default function Page() {
             date="Feb 2026"
             stats={["10M orders/day", "70 countries", "25% lower contact rates", "60%+ fewer escalations"]}
             theme="Last-mile delivery optimization with IVR localization across 50+ languages"
+            link="https://customers.twilio.com/en-us/delivery-hero"
           />
           <StoryCard
             customer="Audibene"
             date="Feb 2026"
             stats={["Global hearing care", "Unified comms backbone", "Multiproduct platform"]}
             theme="Reinventing healthcare communications with unified voice, messaging, and data"
+            link="https://customers.twilio.com/en-us/audibene0"
           />
           <StoryCard
             customer="Relay Technologies"
             date="Mar 2026"
             stats={["Day-1 customer", "4 product lines", "Digital → Enterprise"]}
             theme="Scaling from startup to enterprise with multiproduct communications"
+            link="https://customers.twilio.com/en-us/relay-technologies"
           />
           <StoryCard
             customer="Sage"
             date="Mar 2026"
             stats={["Silos → always-on journeys", "Real-time triggers", "PR media alert"]}
             theme="Data platform transformation enabling automated, behavior-driven customer journeys"
+            link="https://customers.twilio.com/en-us/sage-cuts-cost-per-conversion-by-over-30--with-twilio-segment"
           />
           <StoryCard
             customer="Docplanner"
             date="Q2 2026"
             stats={["Healthcare SaaS", "EMEA expansion"]}
             theme="Communications-led growth in European healthcare marketplace"
+            link="https://customers.twilio.com/en-us/docplanner0"
           />
           <StoryCard
             customer="Voice AI Startup"
@@ -387,11 +397,13 @@ function ProjectCard({
   timeline,
   tags,
   bullets,
+  links,
 }: {
   title: string;
   timeline: string;
   tags: string[];
   bullets: string[];
+  links?: { label: string; url: string }[];
 }) {
   return (
     <div className="bg-card border border-border rounded-xl p-6">
@@ -413,6 +425,15 @@ function ProjectCard({
           </li>
         ))}
       </ul>
+      {links && links.length > 0 && (
+        <div className="flex flex-wrap gap-3 mt-4 pt-3 border-t border-border">
+          {links.map((l) => (
+            <a key={l.url} href={l.url} target="_blank" rel="noopener noreferrer" className="text-xs text-accent hover:underline font-medium">
+              {l.label} ↗
+            </a>
+          ))}
+        </div>
+      )}
     </div>
   );
 }
@@ -422,16 +443,24 @@ function StoryCard({
   date,
   stats,
   theme,
+  link,
 }: {
   customer: string;
   date: string;
   stats: string[];
   theme: string;
+  link?: string;
 }) {
   return (
     <div className="bg-card border border-border rounded-xl p-5">
       <div className="flex justify-between items-baseline mb-2">
-        <h3 className="font-semibold">{customer}</h3>
+        {link ? (
+          <a href={link} target="_blank" rel="noopener noreferrer" className="font-semibold hover:text-accent transition-colors">
+            {customer} ↗
+          </a>
+        ) : (
+          <h3 className="font-semibold">{customer}</h3>
+        )}
         <span className="text-xs text-muted">{date}</span>
       </div>
       <p className="text-sm text-muted mb-3">{theme}</p>
