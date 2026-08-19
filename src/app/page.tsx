@@ -365,27 +365,17 @@ export default function Page() {
           ]}
         />
         <ProjectCard
-          title="Cost of Inaction Estimator"
-          timeline="Jun 2026"
-          tags={["Calculator", "Revenue Modeling"]}
-          bullets={[
-            "Working prototype that quantifies revenue at risk from delayed communications platform adoption",
-            "Models opportunity cost across customer acquisition, retention, and operational efficiency",
-            "Designed for AEs to use during discovery to create urgency backed by the prospect's own data",
-          ]}
-        />
-        <ProjectCard
-          title="Platform Offsite Workstream Dashboard"
+          title="Platform Workstream Dashboard"
           timeline="Mar 2026"
           tags={["Google Apps Script", "Web App"]}
           bullets={[
             "Transformed a 58-slide offsite deck into an interactive workstream tracker",
             "Team members log in via Google auth to update progress on assigned workstreams",
-            "Replaced post-offsite entropy with persistent, shared accountability",
+            "Replaced team entropy with persistent, shared accountability",
           ]}
         />
         <ProjectCard
-          title="PMM Operating System (This Workspace)"
+          title="Personal PMM Operating System"
           timeline="Ongoing"
           tags={["Claude Code", "MCP Integrations", "Automated Workflows"]}
           bullets={[
